@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Side Validation</title>
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <label for="name"> Full name</label>
+    <input type="text" id="name" required>
+<hr>
+<label for="school"> Are you in school? </label>
+    <input type="checkbox" id="yesno" name="school" disabled>
+<hr>
+    <label for="readonlyinput"> This is read only. </label>
+    <input type="text" id="information" name="readonlyinput" readonly>
+<hr>
+    <label for="img">Select your Picture:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+  <hr>
+    <label for="portfolio">Upload your portfolio:</label>
+    <input type="file" id="portfolio" name="portfolio" accept=".rar,.zip" >
+  
+<hr>
+<p>Check if the spellchecker works:</p>
+    <!--This will check the spelling-->
+<input type="text" name="spelling" spellcheck="true" placeholder="Write something">
+<!--This will NOT check the spelling-->
+<input type="text" name="spelling" spellcheck="false" placeholder="Write something">
+
+
+</body>
+</html>
