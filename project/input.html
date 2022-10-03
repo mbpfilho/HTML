@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard-driven Inputs</title>
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/action_page.php">
+        <h1> This is a form with many many inputs! </h1>
+        <textarea name="story"
+        rows="4" >
+Tell us about your most embarrassing moment...
+</textarea>
+
+<p> Departure date: <input type="date" name="birthday" >
+    </p>
+    
+    <p>Please share a funny video:</p> 
+    <input type="url" name="funnyvideo" >
+    
+    <p> 
+        How many years of computer skills do you have?</p>
+    <input type="number" name="computerskills" min=”0” max=”45”>
+
+
+    <p>Search:</p>
+<input type="search" name="search" placeholder="What are you looking for today?" >
+<input type="submit" value="Search" >
+
+<br>
+<br>
+<input type="submit" value="Submit">
+        </form>
+</body>
+</html>

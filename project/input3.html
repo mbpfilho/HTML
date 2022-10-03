@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		body {
+			background: white;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<h1>The Mayoral Office wants to ask you a question!</h1>
+		<fieldset>
+			<legend>Basic Information</legend>
+			<p>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name">
+			</p>
+			<p>
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email">
+			</p>
+			<p>
+				<label for="birth">Date of birth</label>
+				<input type="date" name="birth" id="birth">
+			</p>
+			<p>
+				<label for="height">Height</label>
+				<input type="number" name="height" id="height" min="40" max="240" placeholder="cm">
+			</p>
+			<p>Are you generally happy with the mayoral office?<br>
+				<input type="radio" name="happy" value="yes">Yes<br>
+				<input type="radio" name="happy" value="no">No
+			</p>
+			<p>
+				<label for="animals">What animals do you have?<br>
+					<input type="checkbox" name="animals" value="dog">Dog<br>
+					<input type="checkbox" name="animals" value="cat">Cat<br>
+					<input type="checkbox" name="animals" value="fish">Fish<br>
+					<input type="checkbox" name="animals" value="bird">Bird<br>
+					<input type="checkbox" name="animals" value="snake">Snake
+				</label>
+			</p>
+			<p>
+				<label for="video">What is your favourite YouTube video?</label>
+				<input type="url" name="video" id="video">
+			</p>
+			<p>
+				<label for="comments">Additional Comments:</label><br>
+				<textarea name="comments" id="comments" rows="4">
+				</textarea>
+			</p>
+			<input type="submit">
+			<input type="reset">
+		</fieldset>
+	</form>
+</body>
+
+</html>
