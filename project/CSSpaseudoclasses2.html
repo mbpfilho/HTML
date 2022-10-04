@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		body {
+			background: white;
+		}
+		input:invalid{
+			border: 2px solid red;
+		}
+		input:valid{
+			border: 2px solid green;
+		}
+	</style>
+</head>
+
+<body>
+<form action="#"><label for="fname">First name:</label>
+
+<input type="text" name="fname" id="name" required autofocus>
+<br><br>
+<label for="lname">Last name:</label>
+<input type="text" name="lname" id="lname" required>
+<br><br>
+<label for="pword">Password:</label>
+<input type="password" name="pword" id="pword" required>
+<br><br>
+<label for="age">Age (years):</label>
+<input type="number" name="age" id="age" min="18" max="100" required>
+<br><br>
+<label for="location">Gym location:</label>
+<input type="text" id="location" name="location" value="Cross-Town Rd." readonly>
+<br><br>
+<label for="picture">Upload a profile picture:</label>
+<input type="file" name="picture" id="picture" accept="image/*.png">
+<br><br>
+<label for="dneeds">Dietary Needs</label>
+<textarea id="dietary" name="dietary" spellcheck="true" placeholder="Put in your dietary needs"></textarea>
+<br><br>
+<input type="submit">
+</form>
+</body>
+
+</html>
